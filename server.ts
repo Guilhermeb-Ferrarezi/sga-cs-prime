@@ -2,7 +2,7 @@ import app from "./dist/server/index.js";
 
 const port = Number(process.env.PORT ?? 3000);
 const hostname = process.env.HOST ?? "0.0.0.0";
-const appBasePath = process.env.APP_BASE_PATH ?? "/";
+const appBasePath = process.env.APP_BASE_PATH ?? "/cs2/prime/";
 const normalizedBasePath = appBasePath.endsWith("/") ? appBasePath : `${appBasePath}/`;
 const assetsPrefix = `${normalizedBasePath}assets/`;
 const clientAssetsDir = new URL("./dist/client/assets/", import.meta.url);
