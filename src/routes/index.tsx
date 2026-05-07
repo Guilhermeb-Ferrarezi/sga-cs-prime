@@ -15,8 +15,9 @@ import broadcastImg from "@/assets/cs2-broadcast.jpg";
 import playerImg from "@/assets/cs2-player.jpg";
 import trophyImg from "@/assets/cs2-trophy.jpg";
 import sgaLogo from "@/assets/sga-logo.png";
+import ogImagePath from "@/assets/cs2-hero.jpg?url";
 
-const ogImage = "https://santos-games.com/cs2/prime/cs-prime.jpg";
+const ogImage = new URL(ogImagePath, "https://santos-games.com").toString();
 
 export const Route = createFileRoute("/")({
   head: () => ({
