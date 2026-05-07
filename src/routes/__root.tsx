@@ -1,7 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?inline";
-const ogImage = `${import.meta.env.BASE_URL}cs-prime.png`;
+const ogImage = `${import.meta.env.BASE_URL}cs-prime.jpg`;
 
 function NotFoundComponent() {
   return (
