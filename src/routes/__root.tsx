@@ -1,7 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?inline";
-import ogImagePath from "@/assets/cs2-hero.jpg?url";
+import ogImagePath from "@/assets/cs-prime.jpg?url";
 
 const ogImage = new URL(ogImagePath, "https://santos-games.com").toString();
 
