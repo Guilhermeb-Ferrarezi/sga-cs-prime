@@ -16,6 +16,8 @@ import playerImg from "@/assets/cs2-player.jpg";
 import trophyImg from "@/assets/cs2-trophy.jpg";
 import sgaLogo from "@/assets/sga-logo.png";
 
+const ogImage = `${import.meta.env.BASE_URL}cs-prime.png`;
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -31,7 +33,11 @@ export const Route = createFileRoute("/")({
         content:
           "Campeonato presencial de Counter-Strike 2 com transmissão ao vivo, narração profissional e estrutura de alto nível.",
       },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:alt", content: "Jogadores de CS2 em arena escura iluminada por luzes laranja" },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: ogImage },
     ],
   }),
   component: Index,

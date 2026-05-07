@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?inline";
+const ogImage = `${import.meta.env.BASE_URL}cs-prime.png`;
 
 function NotFoundComponent() {
   return (
@@ -33,8 +34,11 @@ export const Route = createRootRoute({
       { name: "description", content: "Campeonato presencial de CS2 em Ribeirão Preto." },
       { property: "og:title", content: "CS Prime do Interior" },
       { property: "og:description", content: "Campeonato presencial de CS2 em Ribeirão Preto." },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:alt", content: "Jogadores de CS2 em arena escura iluminada por luzes laranja" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: ogImage },
     ],
   }),
   shellComponent: RootShell,
