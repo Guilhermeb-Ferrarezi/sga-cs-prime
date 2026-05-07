@@ -36,6 +36,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: ogImage },
       { property: "og:image:alt", content: "Jogadores de CS2 em arena escura iluminada por luzes laranja" },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://santos-games.com/cs2/prime/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: ogImage },
     ],
